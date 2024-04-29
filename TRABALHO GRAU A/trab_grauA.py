@@ -12,7 +12,11 @@ def rolar_dado ():
     dado = random.randint (1,6)
 
 #regra da morte
-
+def morrer (jogador):
+    if jogador['posicao'] in [2, 8, 18]:
+        print(f'O jogador {jogador} morreu!')
+    else:
+        print(f'O jogador {jogador} venceu!')
 
 #regra do desafio matemático
 def desafio_matematico():
